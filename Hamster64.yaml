@@ -19,7 +19,7 @@ options:
   find_file_boundaries: True
   header_encoding: shift_jis
 
-  o_as_suffix: True
+  o_as_suffix: False
   use_legacy_include_asm: False
   mips_abi_float_regs: o32
 
@@ -67,7 +67,7 @@ segments:
     bss_size: 0xDE7F0
     subsegments:
       - [0x1060, asm]
-      - [0x31380, data]
+      - [0x31150, data]
       - { type: bss, vram: 0x80079E10 }
 
   - type: bin
