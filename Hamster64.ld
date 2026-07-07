@@ -35,17 +35,17 @@ SECTIONS
     {
         FILL(0x00000000);
         entry_TEXT_START = .;
-        build/asm/1000.s.o(.text);
+        build/src/1000.s.o(.text);
         . = ALIGN(., 16);
         entry_TEXT_END = .;
         entry_TEXT_SIZE = ABSOLUTE(entry_TEXT_END - entry_TEXT_START);
         entry_DATA_START = .;
-        build/asm/1000.s.o(.data);
+        build/src/1000.s.o(.data);
         . = ALIGN(., 16);
         entry_DATA_END = .;
         entry_DATA_SIZE = ABSOLUTE(entry_DATA_END - entry_DATA_START);
         entry_RODATA_START = .;
-        build/asm/1000.s.o(.rodata);
+        build/src/1000.s.o(.rodata);
         . = ALIGN(., 16);
         entry_RODATA_END = .;
         entry_RODATA_SIZE = ABSOLUTE(entry_RODATA_END - entry_RODATA_START);
@@ -55,7 +55,7 @@ SECTIONS
     {
         FILL(0x00000000);
         entry_BSS_START = .;
-        build/asm/1000.s.o(.bss);
+        build/src/1000.s.o(.bss);
         . = ALIGN(., 16);
         entry_BSS_END = .;
         entry_BSS_SIZE = ABSOLUTE(entry_BSS_END - entry_BSS_START);

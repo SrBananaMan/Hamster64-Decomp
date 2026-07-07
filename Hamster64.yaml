@@ -19,6 +19,7 @@ options:
   find_file_boundaries: True
   header_encoding: shift_jis
 
+  hasm_in_src_path: True
   o_as_suffix: False
   use_legacy_include_asm: False
   mips_abi_float_regs: o32
@@ -47,6 +48,8 @@ segments:
   - name: header
     type: header
     start: 0x0
+    subsegments:
+      - [0x0, .data, header]
 
   - name: ipl3
     type: bin
