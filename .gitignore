@@ -8,8 +8,8 @@ mod/
 expected/
 rsp/
 include/ld_addrs.h
-rockmandash.ld
-rockmandash.d
+Hamster64.ld
+Hamster64.d
 ctx.c
 build.ninja
 .ninja_deps
@@ -26,5 +26,6 @@ __pycache__/
 *.d
 .venv
 venv/
-tools/gcc_kmc/
-
+tools/gcc_2.7.2/
+tools/ido_recomp/
+tools/slinky

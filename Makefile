@@ -142,11 +142,13 @@ modsplit:
 	$(V)rm -rf asm
 	$(V)$(MOD_OVL_TABLE_INJECT)
 	$(V)$(MOD_SPLAT)
+	cp src/header.s asm/header.s
 	$(V)$(MOD_LINKER_INJECT)
 
 split:
 	$(V)rm -rf asm
 	$(V)$(SPLAT)
+	cp src/header.s asm/header.s
 	
 test: $(ROM)
 	$(V)$(EMULATOR) $<
