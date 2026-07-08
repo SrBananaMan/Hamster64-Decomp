@@ -8,7 +8,9 @@
 .word 0xE0B72A7F       /* Checksum 2 */
 .word 0x00000000       /* Unknown 1 */
 .word 0x00000000       /* Unknown 2 */
-.ascii "ﾊﾑｽﾀｰﾓﾉｶﾞﾀﾘ64       " /* Internal name */
+/*"ﾊﾑｽﾀｰﾓﾉｶﾞﾀﾘ64       "*/
+/* hex representation of above */
+.byte 0xCA, 0xD1, 0xBD, 0xC0, 0xB0, 0xD3, 0xC9, 0xB6, 0xDE, 0xC0, 0xD8, 0x36, 0x34, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20
 .word 0x00000000       /* Unknown 3 */
 .word 0x0000004E       /* Cartridge */
 .ascii "HS"            /* Cartridge ID */
