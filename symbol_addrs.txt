@@ -15,6 +15,7 @@ __osPiCreateAccessQueue = 0x800439F0;
 __osSiGetAccess = 0x80043A44;
 __osSiRelAccess = 0x80043AB0;
 osPiStartDma = 0x80043AE0;
+osAiGetLength = 0x80043B90; // type:func
 osAiSetFrequency = 0x80043BA0;
 osAiSetNextBuffer = 0x80043CC0;
 osInvalDCache = 0x80047840;
